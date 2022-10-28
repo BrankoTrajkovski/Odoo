@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="crm_lead_inherit_view_form1" model="ir.ui.view">
+        <field name="name">crm.lead.form.view</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <group name="lead_info" position="after">
+                <group name="lead_Assets">
+                    <label for="x_DOT"/>
+                    <div class="o_row">
+                        <field name="x_DOT"/>
+                        <label for="x_MC" class="oe_inline"/>
+                        <field name="x_MC" placeholder="MC"/>
+                    </div>
+                    <field name="x_NumberOfAssets"/>
+                    <field name="x_Trucks" />
+                    <field name="x_CarrierRating"/>
+                    <field name="x_HOSCOMPPCT" />                                
+                    <field name="x_UNSAFEDRIVPCT"/>
+                    <field name="x_ScoreDate" />                
+                </group>
+            </group>
+        </field>
+    </record>
+
+    <record id="crm_lead_inherit_view_form" model="ir.ui.view">
+        <field name="name">res.partner.form.view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="x_DOT" attrs="{'invisible':[('is_company', '=', False)]}"/>  
+                <field name="x_MC" attrs="{'invisible':[('is_company', '=', False)]}"/>  
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
