@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    
+    <!-- Helpdesk Multi Action -->
+    <record model="ir.actions.server" id="sh_merger_ticket_server_action">
+        <field name="name">Merge Tickets</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_helpdesk_ticket" />
+        <field name="binding_model_id" ref="model_helpdesk_ticket" />
+        <field name="state">code</field>
+        <field name="code">
+                action = records.import_data_manually_queue()
+            </field>
+    </record>
+
+    <!-- Helpdesk Ticekt Merged Button -->
+    <record id="view_helpdesk_ticket_form_inherit" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.form.inherit</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('oe_button_box')]" position="inside">
+                <button class="oe_stat_button" type="object" name="action_open_helpdesk_ticket_mrgd" icon="fa-bars" attrs="{'invisible': [('merge_count', '=', 0)]}">
+                    <field name="merge_count" widget="statinfo" string="Merged Tickets" />
+                </button>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

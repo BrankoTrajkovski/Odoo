@@ -1,0 +1,148 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_helpdesk_ticket_merge_ent
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-17 13:23+0000\n"
+"PO-Revision-Date: 2022-08-17 13:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model_terms:ir.ui.view,arch_db:sh_helpdesk_ticket_merge_ent.sh_merge_tickets_wizard
+msgid "Cancel"
+msgstr "Absagen"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_helpdesk_ticket__child_ticket_id
+msgid "Child Ticket Id"
+msgstr "Kinder -Ticket -ID"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__create_new
+msgid "Create New Ticket ?"
+msgstr "Neues Ticket erstellen?"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__sh_partner_id
+msgid "Customer"
+msgstr "Kunde"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: code:addons/sh_helpdesk_ticket_merge_ent/models/helpdesk_ticket.py:0
+#: model:ir.model,name:sh_helpdesk_ticket_merge_ent.model_helpdesk_ticket
+#, python-format
+msgid "Helpdesk Ticket"
+msgstr "Helpdesk -Ticket"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__id
+msgid "ID"
+msgstr "ICH WÜRDE"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt modifiziert auf"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model_terms:ir.ui.view,arch_db:sh_helpdesk_ticket_merge_ent.sh_merge_tickets_wizard
+msgid "Merge"
+msgstr "Verschmelzen"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_helpdesk_ticket__merge_count
+msgid "Merge Count"
+msgstr "Zählung zusammen"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model,name:sh_helpdesk_ticket_merge_ent.model_sh_merge_tickets
+msgid "Merge Helpdesk Ticekts"
+msgstr "Fusion Helpdesk Ticekts"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__merge_reason
+msgid "Merge Reason"
+msgstr "Grund verschmelzen"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.actions.act_window,name:sh_helpdesk_ticket_merge_ent.sh_merge_tickets_action_wizard
+#: model:ir.actions.server,name:sh_helpdesk_ticket_merge_ent.sh_jira_project_queue
+#: model_terms:ir.ui.view,arch_db:sh_helpdesk_ticket_merge_ent.sh_merge_tickets_wizard
+msgid "Merge Tickets"
+msgstr "Tickets zusammenführen"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model_terms:ir.ui.view,arch_db:sh_helpdesk_ticket_merge_ent.view_helpdesk_ticket_form_inherit
+msgid "Merged Tickets"
+msgstr "Zusammengeführte Tickets"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__user_id
+msgid "Responsible User"
+msgstr "Verantwortungsbewusster Benutzer"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__subject
+msgid "Subject"
+msgstr "Thema"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__helpdesk_team_id
+msgid "Support Team"
+msgstr "Support-team"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__helpdesk_ticket_id
+#: model:ir.model.fields,field_description:sh_helpdesk_ticket_merge_ent.field_sh_merge_tickets__helpdesk_ticket_ids
+msgid "Support Ticket"
+msgstr "Unterstüzungsticket"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: model_terms:ir.ui.view,arch_db:sh_helpdesk_ticket_merge_ent.sh_merge_tickets_wizard
+msgid "Support Tickets"
+msgstr "Support -Tickets"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: code:addons/sh_helpdesk_ticket_merge_ent/models/helpdesk_ticket.py:0
+#, python-format
+msgid "You Can Only Merge Same Customers Tickets !!"
+msgstr "Sie können nur die gleichen Kunden Tickets zusammenführen !!"
+
+#. module: sh_helpdesk_ticket_merge_ent
+#: code:addons/sh_helpdesk_ticket_merge_ent/models/helpdesk_ticket.py:0
+#, python-format
+msgid "You should select minium two ticket for merge !!"
+msgstr "Sie sollten ein MINIUM Two -Ticket für die Zusammenführung auswählen !!"

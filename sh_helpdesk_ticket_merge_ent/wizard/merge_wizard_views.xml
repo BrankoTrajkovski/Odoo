@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sh_merge_tickets_wizard" model="ir.ui.view">
+        <field name="name">sh.merge.tickets.wizard</field>
+        <field name="model">sh.merge.tickets</field>
+        <field name="arch" type="xml">
+            <form string="Merge Tickets">
+                <group>
+                    <group class="oe_title">
+                        <field name="user_id" />
+                        <field name="helpdesk_team_id" />
+                        <field name="sh_partner_id" />
+                        <field name="helpdesk_ticket_id" domain="[('partner_id','=',sh_partner_id)]" attrs="{'invisible': [('create_new', '=', True)],'required': [('create_new', '!=', True)]}" />
+                    </group>
+                    <group>
+                        <field name="create_new" />
+                        <field name="subject" attrs="{'invisible': [('create_new', '=', False)],'required': [('create_new', '!=', False)]}" />
+                        <field name="merge_reason" />
+                    </group>
+                </group>
+                <notebook>
+                    <page string="Support Tickets" name='support_ticket'>
+                        <field name="helpdesk_ticket_ids">
+                            <tree>
+                                <field name="name" />
+                                <field name="display_name" />
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+
+                <footer>
+                    <button name="merge_select_tickets" string="Merge" type="object" class="btn-primary" />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="sh_merge_tickets_action_wizard" model="ir.actions.act_window">
+        <field name="name">Merge Tickets</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sh.merge.tickets</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="sh_merge_tickets_wizard" />
+        <field name="target">new</field>
+    </record>
+
+</odoo>
